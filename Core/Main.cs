@@ -630,7 +630,7 @@ namespace Assistant
                         ProcessStartInfo processInfo = new ProcessStartInfo();
                         processInfo.Verb = "runas"; // Administrator Rights
                         processInfo.FileName = Path.Combine(Config.GetInstallDirectory(), "Updater.exe");
-						processInfo.Arguments = v.ToString();
+						processInfo.Arguments = newVer.ToString();
                         Process.Start(processInfo);
 						Process.GetCurrentProcess().Kill();
 					}

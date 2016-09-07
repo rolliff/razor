@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor", "Razor\Razor.csproj", "{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}"
 EndProject
@@ -46,8 +46,8 @@ Global
 		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|Mixed Platforms.Build.0 = Release|x86
 		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|Win32.ActiveCfg = Release|x86
 		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|Win32.Build.0 = Release|x86
-		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|x86.ActiveCfg = Release|x86
-		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|x86.Build.0 = Release|x86
+		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|x86.ActiveCfg = Debug|x86
+		{B24E4FB1-4936-4544-9E88-F3FF9B04FDBA}.Release|x86.Build.0 = Debug|x86
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Debug|Mixed Platforms.Build.0 = Debug|Win32
@@ -60,6 +60,7 @@ Global
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Release|Win32.ActiveCfg = Release|Win32
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Release|Win32.Build.0 = Release|Win32
 		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Release|x86.ActiveCfg = Release|Win32
+		{B32A4D9E-3AF1-4C75-989D-D62C4E8F08B1}.Release|x86.Build.0 = Release|Win32
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Debug|Mixed Platforms.ActiveCfg = Release|Win32
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Debug|Mixed Platforms.Build.0 = Release|Win32
@@ -72,6 +73,7 @@ Global
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Release|Win32.ActiveCfg = Release|Win32
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Release|Win32.Build.0 = Release|Win32
 		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Release|x86.ActiveCfg = Release|Win32
+		{F308E8D5-2B4F-40AD-9BF7-9A8F5DDA420D}.Release|x86.Build.0 = Release|Win32
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -85,7 +87,6 @@ Global
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Release|Win32.ActiveCfg = Release|x86
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Release|Win32.Build.0 = Release|x86
 		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Release|x86.ActiveCfg = Release|x86
-		{8AB99CD3-9582-4E68-BDEC-23F189A222B2}.Release|x86.Build.0 = Release|x86
 		{50A2CA7B-6CC4-4750-B373-0DF99F2FE18E}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{50A2CA7B-6CC4-4750-B373-0DF99F2FE18E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{50A2CA7B-6CC4-4750-B373-0DF99F2FE18E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
@@ -110,6 +111,7 @@ Global
 		{F21B64BC-7873-4CDB-9B51-4D7B195B8FC4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F21B64BC-7873-4CDB-9B51-4D7B195B8FC4}.Release|Win32.ActiveCfg = Release|Any CPU
 		{F21B64BC-7873-4CDB-9B51-4D7B195B8FC4}.Release|x86.ActiveCfg = Release|Any CPU
+		{F21B64BC-7873-4CDB-9B51-4D7B195B8FC4}.Release|x86.Build.0 = Release|Any CPU
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -122,6 +124,7 @@ Global
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Release|Win32.ActiveCfg = Release|Any CPU
 		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5D66ACE6-B2A4-400F-B5A5-24525959AC5C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

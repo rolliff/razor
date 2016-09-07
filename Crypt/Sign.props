@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Command>signtool sign /a /n "Mark Sturgill" /tr http://time.certum.pl/ /d "Razor Updater" /du https://github.com/msturgill/razor  "$(SolutionDir)Release\Updater.exe"
+signtool sign /a /n "Mark Sturgill" /tr http://time.certum.pl/ /d "Razor Assistant" /du https://github.com/msturgill/razor  "$(SolutionDir)Release\Razor.exe"
+signtool sign /a /n "Mark Sturgill" /tr http://time.certum.pl/ /d "Ultima SDK" /du https://github.com/msturgill/razor  "$(SolutionDir)Release\Ultima.dll"
+</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool sign /a /n "Mark Sturgill" /tr http://time.certum.pl/ /d "Razor Crypt Assembly" /du https://github.com/msturgill/razor  "$(SolutionDir)Release\Crypt.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

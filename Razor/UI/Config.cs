@@ -770,7 +770,10 @@ namespace Assistant
         public static string GetInstallDirectory(string name)
         {
             string dir = GetRegString(Microsoft.Win32.Registry.LocalMachine, "InstallDir");
-
+            if (dir == null || dir == "")
+            {
+                dir = GetRegString(Microsoft.Win32.Registry.CurrentUser, "InstallDir");
+            }
             try
             {
                 if (dir == null || dir == "")

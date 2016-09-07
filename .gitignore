@@ -171,4 +171,5 @@ $RECYCLE.BIN/
 /Output/Razor.*
 /Output/RPVOpenStub*
 /Debug
-/Razor/packages
+packages
+Output

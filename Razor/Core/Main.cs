@@ -193,8 +193,11 @@ namespace Assistant
 
 			CheckUpdaterFiles();
 
-			if ( ClientCommunication.InitializeLibrary( Engine.Version ) == 0 || !File.Exists( Path.Combine( Config.GetInstallDirectory(), "Updater.exe" ) ) )
-				throw new InvalidOperationException( "This Razor installation is corrupted." );
+            if(ClientCommunication.InitializeLibrary( Engine.Version ) == 0)
+                throw new InvalidOperationException( "InitializeLibrary: This Razor installation is corrupted." );
+
+			if (!File.Exists( Path.Combine( Config.GetInstallDirectory(), "Updater.exe" ) ) )
+				throw new InvalidOperationException( "UpdaterMissing: This Razor installation is corrupted." );
 
 			try { Engine.ShardList = Config.GetRegString(Microsoft.Win32.Registry.CurrentUser, "ShardList"); }
 			catch { }
@@ -382,7 +385,7 @@ namespace Assistant
 			SplashScreen.Message = LocString.LoadingLastProfile;
 			Config.LoadCharList();
 			if ( !Config.LoadLastProfile() )
-				MessageBox.Show( SplashScreen.Instance, "The selected profile could not be loaded, using default instead.", "Profile Load Error", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+				MessageBox.Show( "The selected profile could not be loaded, using default instead.", "Profile Load Error", MessageBoxButtons.OK, MessageBoxIcon.Warning );
 
 			if ( attPID == -1 )
             {
